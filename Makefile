@@ -5,7 +5,9 @@ OBJS = \
 	memory.o \
 	debug.o \
 	value.o \
-	vm.o
+	vm.o \
+	compiler.o \
+	scanner.o
 CFLAGS = -c -g -Wall -std=c99
 INCLUDES = \
 
@@ -22,3 +24,5 @@ memory.o: memory.c
 debug.o: debug.c
 value.o: value.c
 vm.o: vm.c
+compiler.o: compiler.c
+scanner.o: scanner.c
