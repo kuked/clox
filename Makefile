@@ -7,7 +7,8 @@ OBJS = \
 	value.o \
 	vm.o \
 	compiler.o \
-	scanner.o
+	scanner.o \
+	object.o
 CFLAGS = -c -g -Wall -std=c99
 INCLUDES = \
 
@@ -26,3 +27,4 @@ value.o: value.c
 vm.o: vm.c
 compiler.o: compiler.c
 scanner.o: scanner.c
+object.o: object.c
