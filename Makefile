@@ -17,8 +17,8 @@ $(TARGET):$(OBJS)
 	$(CC) $(OBJS) -o $@ -lm
 clean:
 	rm -f *.o
-test:
-	./clox
+check:
+	./clox test/sandbox.lox
 
 main.o: main.c
 chunk.o: chunk.c
