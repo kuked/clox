@@ -1,1 +1,11 @@
 print (1 + 2) - (3 * 4) / 5;
+
+var i = 0;
+var x = true;
+while (x == true) {
+      print(i);
+      i = i + 1;
+      if (i == 10) {
+         x = false;
+      }
+}
